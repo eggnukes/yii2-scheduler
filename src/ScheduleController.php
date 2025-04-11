@@ -51,13 +51,13 @@ class ScheduleController extends Controller
 
         foreach ($events as $event) {
             $event->omitErrors($this->omitErrors);
-            $this->stdout('Running scheduled command: '.$event->getSummaryForDisplay()."\n");
+            $this->stdout('[' . date('Y-m-d H:i:s') . '] Running scheduled command: '.$event->getSummaryForDisplay()."\n");
             $event->run(\Yii::$app);
         }
 
         if (count($events) === 0)
         {
-            $this->stdout("No scheduled commands are ready to run.\n");
+            $this->stdout("[" . date('Y-m-d H:i:s') . "] No scheduled commands are ready to run.\n");
         }
     }
 
@@ -69,7 +69,7 @@ class ScheduleController extends Controller
 
         $scheduleFile = \Yii::getAlias($this->scheduleFile);
         if (file_exists($scheduleFile) == false) {
-            $this->stderr('Can not load schedule file '.$this->scheduleFile."\n");
+            $this->stderr('[' . date('Y-m-d H:i:s') . '] Can not load schedule file '.$this->scheduleFile."\n");
             return;
         }
 
