@@ -1,6 +1,6 @@
 <?php
 
-namespace omnilight\scheduling;
+namespace eggnukes\scheduler;
 
 use Yii;
 use yii\base\Component;

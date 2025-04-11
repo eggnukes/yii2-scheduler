@@ -1,6 +1,6 @@
 <?php
 
-namespace omnilight\scheduling;
+namespace eggnukes\scheduler;
 
 use Cron\CronExpression;
 use GuzzleHttp\Client as HttpClient;
