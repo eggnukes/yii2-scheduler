@@ -1,5 +1,5 @@
 {
-  "name": "eggnukes/yii2-schedule",
+  "name": "eggnukes/yii2-scheduler",
   "description": "CRON scheduling extension for Yii2 framework",
   "keywords": [
     "yii",
@@ -31,7 +31,7 @@
     }
   },
   "extra": {
-    "bootstrap": "omnilight\\scheduling\\Bootstrap"
+    "bootstrap": "eggnukes\\scheduler\\Bootstrap"
   },
   "scripts": {
     "test": "vendor/bin/phpunit"
