@@ -1,6 +1,6 @@
 {
-  "name": "omnilight/yii2-scheduling",
-  "description": "Scheduling extension for Yii2 framework",
+  "name": "eggnukes/yii2-schedule",
+  "description": "CRON scheduling extension for Yii2 framework",
   "keywords": [
     "yii",
     "scheduling",
@@ -15,9 +15,8 @@
   ],
   "type": "yii2-extension",
   "require": {
-    "php": ">=5.4.0",
+    "php": ">=7.4.0",
     "yiisoft/yii2": "2.0.*",
-    "symfony/process": "2.6.* || 3.* || 4.*",
     "dragonmantank/cron-expression": "1.*"
   },
   "require-dev": {
