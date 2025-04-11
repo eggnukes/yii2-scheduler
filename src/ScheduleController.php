@@ -17,7 +17,7 @@ class ScheduleController extends Controller
     /**
      * @var string Schedule file that will be used to run schedule
      */
-    public $scheduleFile;
+    public $scheduleFile = '@app/config/schedule.php';
 
     /**
      * @var bool set to true to avoid error output
